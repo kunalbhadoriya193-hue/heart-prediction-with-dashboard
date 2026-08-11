@@ -1,0 +1,1 @@
+End-to-end Heart Disease Prediction web application built with Django and Django REST Framework (DRF), featuring machine learning-based predictions, user authentication, prediction history, REST APIs, and an interactive dashboard.
