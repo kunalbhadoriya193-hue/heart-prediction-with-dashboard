@@ -9,7 +9,7 @@ async function loadDashboard() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/prediction/dashboard/", {
+        const response = await fetch("/prediction/dashboard/", {
 
             method: "GET",
 

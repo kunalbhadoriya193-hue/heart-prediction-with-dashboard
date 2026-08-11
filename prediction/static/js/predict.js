@@ -7,7 +7,7 @@ async function predict() {
         return;
     }
 
-    const response = await fetch("http://127.0.0.1:8000/prediction/", {
+    const response = await fetch("/prediction/", {
 
         method: "POST",
 
