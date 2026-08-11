@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Disease Prediction</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>❤️ Heart Disease Prediction</h1>
+
+            <!-- Tabs -->
+            <div class="tabs">
+
+                <button
+                    id="loginTab"
+                    class="active"
+                    onclick="showLogin()">
+                    Login
+                </button>
+
+                <button
+                    id="registerTab"
+                    onclick="showRegister()">
+                    Register
+                </button>
+
+            </div>
+
+            
+
+            <div id="loginForm">
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Username">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password">
+
+                <button onclick="login()">
+                    Login
+                </button>
+
+                <p id="message"></p>
+
+            </div>
+
+            
+
+            <div id="registerForm" style="display:none;">
+
+                <input
+                    type="text"
+                    id="register-username"
+                    placeholder="Username">
+
+                <input
+                    type="email"
+                    id="register-email"
+                    placeholder="Email">
+
+                <input
+                    type="password"
+                    id="register-password"
+                    placeholder="Password">
+
+                <button onclick="register()">
+                    Register
+                </button>
+
+                <p id="register-message"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/authentication.js' %}"></script>
+
+</body>
+
+</html>

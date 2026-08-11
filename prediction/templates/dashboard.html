@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>❤️ Heart Disease Prediction Dashboard</h1>
+
+    <p class="subtitle">
+        Welcome to your dashboard
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Total Predictions</h2>
+            <h1 id="total">0</h1>
+        </div>
+
+        <div class="card">
+            <h2>Heart Disease</h2>
+            <h1 id="heart">0</h1>
+        </div>
+
+        <div class="card">
+            <h2>No Heart Disease</h2>
+            <h1 id="healthy">0</h1>
+        </div>
+
+   <div class="buttons">
+
+    <button class="btn predict"
+        onclick="window.location.href='/prediction/prediction-page/'">
+        ❤️ New Prediction
+    </button>
+
+    <button class="btn history"
+        onclick="window.location.href='/prediction/history-page/'">
+        📜 History
+    </button>
+
+    <button class="btn logout"
+        onclick="logout()">
+        🚪 Logout
+    </button>
+
+</div>
+</div>
+
+<script src="{% static 'js/dashboard.js' %}"></script>
+
+</body>
+
+</html>
