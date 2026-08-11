@@ -33,7 +33,7 @@ async function login() {
 
     try {
 
-     const response = await fetch("/prediction/login/",  {
+     const response = await fetch("/prediction/login/", {
 
             method: "POST",
 
