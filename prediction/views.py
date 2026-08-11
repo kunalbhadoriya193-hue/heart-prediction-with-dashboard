@@ -202,7 +202,7 @@ def dashboard_page(request):
 
 
 def prediction_page(request):
-    return render(request, "predict.html ")
+    return render(request, "predict.html")
 
 def history_page(request):
     return render(request, "history.html")
