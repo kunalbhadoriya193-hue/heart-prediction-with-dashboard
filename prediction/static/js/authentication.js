@@ -33,7 +33,7 @@ async function login() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/prediction/login/", {
+     const response = await fetch("/prediction/login/",  {
 
             method: "POST",
 
@@ -99,7 +99,7 @@ async function register() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/prediction/register/", {
+        const response = await fetch("/prediction/register/", {
 
             method: "POST",
 
